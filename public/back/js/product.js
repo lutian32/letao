@@ -126,9 +126,8 @@ $(function () {
             //1. 获取到上传的图片地址， 往img_box里面添加图片
             var pic = data.result.picAddr;
 
-            //没用过？？？？？
-            //$('<img src="'+pic+'" width="100" height="100" alt="">').appendTo(".img_box");
-            $(".img_box").append('<img src="'+pic+'" width="100" height="100" alt="">');
+            $('<img src="'+pic+'" width="100" height="100" alt="">').appendTo(".img_box");
+            //$(".img_box").append('<img src="'+pic+'" width="100" height="100" alt="">');
 
 
             //将结果保存到数组中
@@ -145,7 +144,7 @@ $(function () {
             }
 
         }
-    })
+    });
 
 
     //4. 表单校验

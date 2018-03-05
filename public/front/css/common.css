@@ -1,9 +1,23 @@
 @charset "UTF-8";
 
-html,body{
-    height: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    touch-action: none;
 }
 
+
+html,body{
+    height: 100%;
+    background-color: #fff;
+}
+
+
+img{
+    display: block;
+    width: 100%;
+}
 .lt-container{
     width: 100%;
     height: 100%;
@@ -22,7 +36,6 @@ html,body{
     left: 0;
     top: 0;
     background-color: #069;
-    text-align: center;
 }
 
 .lt-header a{
@@ -39,6 +52,7 @@ html,body{
     font-weight: 400;
     font-size:18px;
     color:#fff;
+    text-align: center;
 }
 
 .icon-left{
@@ -58,10 +72,25 @@ html,body{
     background-color: #069;
 }
 
+.lt-footer li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.lt-footer li a{
+    color: #fff;
+}
+
+.lt-footer li p{
+    color:#fff;
+    margin:0;
+}
+
 .lt-main{
     width: 100%;
     height: 100%;
-    background-color: green;
     position: relative;
     overflow: hidden;
 }
