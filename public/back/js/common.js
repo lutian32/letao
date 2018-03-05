@@ -61,6 +61,21 @@ $(function(){
 
     });
 
+    //如果不是登录页，发送ajax请求，查询管理员是否登录
+    if(location.href.indexOf("login.html") == -1){
+        $.ajax({
+            type:"GET",
+            url:"/employee/checkRootLogin",
+            success:function (info) {
+                //console.log(info);
+                //判断，info.error是否是400
+                if(info.error === 400) {
+                    location.href = "login.html";
+                }
+            }
+        })
+    }
+
 
 
 

@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="zh-CN">
+<head>
     <meta charset="UTF-8">
-    <title>乐淘登陆</title>
-    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.min.css"/>
-    <link rel="stylesheet" href="./css/common.css"/>
-    <link rel="stylesheet" href="./lib/nprogress/nprogress.css"/>
+    <title>用户管理</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap-validator/css/bootstrapValidator.min.css">
+    <link rel="stylesheet" href="lib/nprogress/nprogress.css">
+    <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
-<div class="lt-aside">
+
+<div class="lt_aside">
     <div class="brand">
         <a href="index.html">黑马18期</a>
     </div>
     <div class="user">
-        <img src="images/lt4.jpg" alt=""/>
+        <img src="images/default.jpg" alt="">
         <p>超级管理员</p>
     </div>
     <div class="nav">
-        <ul class="first">
+        <ul>
             <li>
                 <a href="user.html" class="now">
                     <span class="glyphicon glyphicon-user"></span>
@@ -44,7 +45,6 @@
         </ul>
     </div>
 </div>
-
 <div class="lt_main">
 
     <div class="lt_header">
@@ -73,7 +73,7 @@
                 </tr>
                 </thead>
                 <tbody>
-
+                <!--挖个坑-->
                 </tbody>
             </table>
 
@@ -83,8 +83,15 @@
             </div>
 
         </div>
+
+
     </div>
+
+
+
 </div>
+
+
 
 <!--退出登录的模态框-->
 <!--role aria sr-only:-->
@@ -124,7 +131,8 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-</body>
+
+
 <!--2. 准备模版-->
 <script type="text/html" id="tpl">
     {{each rows v i}}
@@ -145,12 +153,14 @@
     {{/each}}
 </script>
 
-<script src="./lib/jquery/jquery.min.js"></script>
-<script src="./lib/artTemplate/template-web.js"></script>
-<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-<script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
-<script src="./lib/bootstrap-paginator/bootstrap-paginator.min.js"></script>
-<script src="./lib/nprogress/nprogress.js"></script>
-<script src="./js/common.js"></script>
-<script src="./js/user.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+<script src="lib/bootstrap-paginator/bootstrap-paginator.min.js"></script>
+<script src="lib/nprogress/nprogress.js"></script>
+<!--1. 引入js文件-->
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/common.js"></script>
+<script src="js/user.js"></script>
+</body>
 </html>
