@@ -7,27 +7,4 @@
 }
 
 
-.product{
-    padding: 10px;
-}
 
-.product a{
-    width: 48%;
-    float: left;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.product a:nth-child(odd){
-    margin-right: 4%;
-}
-
-.product .price{
-    color:red;
-}
-
-.product .oldPrice{
-    text-decoration: line-through;
-}

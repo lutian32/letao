@@ -1,21 +1,38 @@
 /**
  * Created by Administrator on 2018/3/5.
  */
-$(function(){
-    //初始化 swiper轮播图
-    var mySwiper = new Swiper ('.swiper-container', {
-        loop: true,
-        autoplay:{
-            delay:2000
-        },
-        // 如果需要分页器
-        pagination: {
-            el: '.swiper-pagination',
-        }
-    });
+
 
     //初始化 mui区域滚动
     mui(".mui-scroll-wrapper").scroll({
         indicators:false
     });
-});
+
+
+    //封装函数 获取地址栏中传递的参数生成对象
+    function getSearch(key) {
+
+        //1. 获取到参数
+        var search = location.search;
+
+        //2. 对参数列表进行解码
+        search = decodeURI(search);
+
+        //3. 去掉?
+        search = search.slice(1);
+
+        //4. 把字符串根据&切割成数组
+        var arr = search.split("&");
+
+        //5. 遍历数组
+        var obj = {};
+        arr.forEach(function(element, index){
+
+            var k = element.split("=")[0];
+            var v = element.split("=")[1];
+
+            obj[k] = v;
+        });
+
+        return obj[key];
+    }
